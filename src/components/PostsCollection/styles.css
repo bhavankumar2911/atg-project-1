@@ -1,0 +1,83 @@
+#posts-collection ul {
+  padding: 0 !important;
+}
+
+#posts-collection ul li {
+  margin-bottom: 6px;
+  border: none;
+  box-shadow: 0px 1px 2px 0px #0000001f;
+}
+
+.post-category span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  transform: translateY(1px);
+  margin-left: 5px;
+}
+
+.post-category {
+  margin-bottom: 6px;
+}
+
+.author-image {
+  height: 37px;
+  width: 37px;
+  margin-right: 12px;
+}
+
+.post-title h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.author-name {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 17px;
+}
+
+.post-views {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #495057;
+}
+
+.call-to-action button {
+  border: 1px solid #a9aeb8;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.meetup-cta {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 140.4%;
+  text-align: center;
+  color: #e56135;
+}
+
+.details-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.01em;
+  color: #212529;
+  margin-left: 5.33px;
+}
+
+.job-cta {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 140.4%;
+  text-align: center;
+  color: #02b875;
+}

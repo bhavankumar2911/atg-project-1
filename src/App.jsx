@@ -3,6 +3,7 @@ import "./main.css";
 import ShapesRowInMobile from "./components/ShapesRowInMobile/index.jsx";
 import Hero from "./components/Hero/index.jsx";
 import PostsFilter from "./components/PostsFilter/index.jsx";
+import PostsCollection from "./components/PostsCollection/index.jsx";
 
 export default function App() {
   return (
@@ -12,6 +13,8 @@ export default function App() {
       <Hero />
 
       <PostsFilter />
+
+      <PostsCollection />
     </main>
   );
 }

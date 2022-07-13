@@ -8,3 +8,18 @@
 button {
   font-weight: 500 !important;
 }
+
+.share-icon {
+  margin-right: 6.25px;
+}
+
+.post-excerpt {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #495057;
+}
+
+.post-bottom {
+  margin-top: 22px;
+}
