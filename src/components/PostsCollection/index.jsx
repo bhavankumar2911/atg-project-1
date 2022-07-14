@@ -81,7 +81,7 @@ function PostsCollection({ isLoggedIn }) {
   return (
     <section
       id="posts-collection"
-      className="row"
+      className="row g-0"
       style={{ overflow: "hidden", maxWidth: "100vw" }}
     >
       <ul className="col col-lg-6 offset-lg-1">
