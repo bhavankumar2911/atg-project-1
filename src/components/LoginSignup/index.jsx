@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles.css";
 import Close from "./assets/close.png";
+import CloseWhite from "./assets/close-white.png";
 import Eye from "./assets/eye.png";
 import Google from "./assets/google.png";
 import FB from "./assets/fb.png";
@@ -12,7 +13,26 @@ function LoginSignup({ isLogin, setIsLogin, setShowLoginModal }) {
       id="login-signup-main"
       className="d-flex flex-column justify-content-end justify-content-lg-center align-items-lg-center"
     >
+      <span
+        className="d-none d-lg-flex justify-content-end"
+        style={{ width: "775px" }}
+      >
+        <img
+          src={CloseWhite}
+          alt="close icon"
+          id="close-btn-lg"
+          onClick={(e) => setShowLoginModal(false)}
+        />
+      </span>
       <div className="bg-white">
+        <div
+          id="flash-message"
+          className="d-none d-lg-block"
+          style={{ backgroundColor: "#EFFFF4" }}
+        >
+          Let's learn, share & inspire each other with our passion for computer
+          engineering. Sign up now
+        </div>
         <div className="row">
           <div className="col">
             <div className="d-flex align-items-center justify-content-between">
@@ -20,6 +40,7 @@ function LoginSignup({ isLogin, setIsLogin, setShowLoginModal }) {
                 {isLogin ? "Welcome Back!" : "Create Account"}
               </h2>
               <img
+                className="d-lg-none"
                 src={Close}
                 alt="times icon"
                 onClick={(e) => setShowLoginModal(false)}
@@ -178,6 +199,7 @@ function LoginSignup({ isLogin, setIsLogin, setShowLoginModal }) {
                       color: "#2F6CE5",
                       display: "inline-block",
                       marginLeft: "3px",
+                      cursor: "pointer",
                     }}
                   >
                     Create new for free!
@@ -191,6 +213,7 @@ function LoginSignup({ isLogin, setIsLogin, setShowLoginModal }) {
                       color: "#2F6CE5",
                       display: "inline-block",
                       marginLeft: "3px",
+                      cursor: "pointer",
                     }}
                   >
                     Sign In

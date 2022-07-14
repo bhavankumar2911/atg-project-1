@@ -9,7 +9,7 @@ import LoginSignup from "./components/LoginSignup/index.jsx";
 import Header from "./components/Header/index.jsx";
 
 export default function App() {
-  const [showLoginModal, setShowLoginModal] = useState(false);
+  const [showLoginModal, setShowLoginModal] = useState(true);
   const [isLogin, setIsLogin] = useState(true);
   const [isLoggedIn, setIsLoggedIn] = useState(true);
 
@@ -21,7 +21,7 @@ export default function App() {
 
       <Hero setShowLoginModal={setShowLoginModal} />
 
-      <PostsFilter />
+      <PostsFilter setShowLoginModal={setShowLoginModal} />
 
       <PostsCollection isLoggedIn={isLoggedIn} />
 

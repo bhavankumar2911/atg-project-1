@@ -105,6 +105,26 @@
   #login-signup-main > div {
     border-radius: 10px;
     width: 736px;
+    position: relative;
+    overflow: hidden;
+    padding-top: 76px;
+  }
+
+  #close-btn-lg {
+    cursor: pointer;
+  }
+
+  #flash-message {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 17px 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #008a45;
   }
 
   .action-section-button {

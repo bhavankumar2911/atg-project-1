@@ -3,7 +3,7 @@ import Arrow from "./assets/arrow.png";
 import AddPeople from "./assets/add-people.png";
 import "./styles.css";
 
-function PostsFilter() {
+function PostsFilter({ setShowLoginModal }) {
   return (
     <>
       <section
@@ -35,6 +35,7 @@ function PostsFilter() {
               <button
                 className="btn btn-light btn-sm"
                 style={{ backgroundColor: "#EDEEF0", marginRight: "16px" }}
+                onClick={(e) => setShowLoginModal(true)}
               >
                 Write a Post{" "}
                 <img
@@ -46,6 +47,7 @@ function PostsFilter() {
               <button
                 className="btn btn-primary btn-sm"
                 style={{ backgroundColor: "#2F6CE5" }}
+                onClick={(e) => setShowLoginModal(true)}
               >
                 <img src={AddPeople} alt="join group symbol" /> Join Group
               </button>

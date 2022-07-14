@@ -78,7 +78,11 @@ function PostsCollection({ isLoggedIn }) {
   const [location, setLocation] = useState("");
 
   return (
-    <section id="posts-collection" className="row">
+    <section
+      id="posts-collection"
+      className="row"
+      style={{ overflow: "hidden", maxWidth: "100vw" }}
+    >
       <ul className="col col-lg-6 offset-lg-1">
         {posts.map((post, index) => {
           const { category, categoryIcon, author, authorImage, views, title } =
