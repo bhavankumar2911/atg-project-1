@@ -18,7 +18,7 @@ function PostsFilter() {
           </button>
         </span>
       </section>
-      <section className="d-none d-lg-block">
+      <section className="d-none d-lg-block" style={{ marginBottom: "28px" }}>
         <div className="row g-0" id="posts-filter-lg">
           <div className="col-6 offset-1">
             <ul id="category-list" className="d-flex">
@@ -36,9 +36,17 @@ function PostsFilter() {
                 className="btn btn-light btn-sm"
                 style={{ backgroundColor: "#EDEEF0", marginRight: "16px" }}
               >
-                Write a Post <img src={Arrow} alt="down arrow symbol" />
+                Write a Post{" "}
+                <img
+                  src={Arrow}
+                  alt="down arrow symbol"
+                  style={{ marginLeft: "16px" }}
+                />
               </button>
-              <button className="btn btn-primary btn-sm">
+              <button
+                className="btn btn-primary btn-sm"
+                style={{ backgroundColor: "#2F6CE5" }}
+              >
                 <img src={AddPeople} alt="join group symbol" /> Join Group
               </button>
             </div>

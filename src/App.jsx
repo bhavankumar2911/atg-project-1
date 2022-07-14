@@ -11,6 +11,7 @@ import Header from "./components/Header/index.jsx";
 export default function App() {
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [isLogin, setIsLogin] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
 
   return (
     <main>
@@ -22,7 +23,7 @@ export default function App() {
 
       <PostsFilter />
 
-      <PostsCollection />
+      <PostsCollection isLoggedIn={isLoggedIn} />
 
       {showLoginModal && (
         <LoginSignup
