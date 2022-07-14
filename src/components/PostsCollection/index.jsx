@@ -25,6 +25,7 @@ import Activism from "./assets/activism.png";
 import MBA from "./assets/mba.png";
 import Philosophy from "./assets/philosophy.png";
 import Info from "./assets/info.png";
+import Eye from "../LoginSignup/assets/eye.png";
 
 const posts = [
   {
@@ -181,14 +182,43 @@ function PostsCollection({ isLoggedIn }) {
                     />
                     <span className="d-flex flex-column justify-content-center">
                       <span className="author-name">{author}</span>
-                      <span className="post-views">{views} views</span>
+                      <span className="post-views d-lg-none">
+                        {views} views
+                      </span>
                     </span>
                   </span>
 
-                  <button className="btn btn-light d-flex align-items-center">
-                    <img src={Share} alt="share icon" className="share-icon" />
-                    Share
-                  </button>
+                  <span className="d-lg-flex">
+                    <span
+                      className="d-none d-lg-flex align-items-center"
+                      style={{ marginRight: "40px" }}
+                    >
+                      <img
+                        src={Eye}
+                        alt="eye icon"
+                        style={{ marginRight: "8px" }}
+                      />
+                      <span
+                        style={{
+                          fontWeight: "500",
+                          fontSize: "14px",
+                          lineHeight: "18px",
+                          textAlign: "right",
+                          color: "#525252",
+                        }}
+                      >
+                        {views} views
+                      </span>
+                    </span>
+                    <button className="btn btn-light d-flex align-items-center">
+                      <img
+                        src={Share}
+                        alt="share icon"
+                        className="share-icon"
+                      />
+                      <span className="d-lg-none">Share</span>
+                    </button>
+                  </span>
                 </div>
               </div>
             </li>

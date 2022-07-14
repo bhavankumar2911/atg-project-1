@@ -4,7 +4,7 @@ import arrow from "./assets/arrow.png";
 
 function Hero({ setShowLoginModal }) {
   return (
-    <section id="hero">
+    <section id="hero" style={{ overflow: "hidden", maxWidth: "100vw" }}>
       <div
         className="text-white d-flex flex-column justify-content-between h-100 justify-content-lg-end"
         id="hero-container"

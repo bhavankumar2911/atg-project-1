@@ -11,13 +11,13 @@ import Header from "./components/Header/index.jsx";
 export default function App() {
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [isLogin, setIsLogin] = useState(true);
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   return (
     <main>
       <ShapesRowInMobile />
 
-      <Header setShowLoginModal={setShowLoginModal} />
+      <Header setShowLoginModal={setShowLoginModal} isLoggedIn={isLoggedIn} />
 
       <Hero setShowLoginModal={setShowLoginModal} />
 
@@ -30,6 +30,7 @@ export default function App() {
           isLogin={isLogin}
           setIsLogin={setIsLogin}
           setShowLoginModal={setShowLoginModal}
+          setIsLoggedIn={setIsLoggedIn}
         />
       )}
 

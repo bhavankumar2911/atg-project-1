@@ -7,7 +7,12 @@ import Google from "./assets/google.png";
 import FB from "./assets/fb.png";
 import Illustration from "./assets/atg_illustration.svg";
 
-function LoginSignup({ isLogin, setIsLogin, setShowLoginModal }) {
+function LoginSignup({
+  isLogin,
+  setIsLogin,
+  setShowLoginModal,
+  setIsLoggedIn,
+}) {
   return (
     <div
       id="login-signup-main"
@@ -141,7 +146,10 @@ function LoginSignup({ isLogin, setIsLogin, setShowLoginModal }) {
               <button
                 type="submit"
                 className="btn btn-primary action-section-button"
-                onClick={(e) => setShowLoginModal(false)}
+                onClick={(e) => {
+                  setShowLoginModal(false);
+                  setIsLoggedIn(true);
+                }}
               >
                 {isLogin ? "Sign In" : "Create Account"}
               </button>

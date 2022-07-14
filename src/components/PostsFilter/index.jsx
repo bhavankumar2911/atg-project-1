@@ -9,6 +9,7 @@ function PostsFilter({ setShowLoginModal }) {
       <section
         id="posts-filter"
         className="d-flex justify-content-between align-items-center d-lg-none"
+        style={{ overflow: "hidden", maxWidth: "100vw" }}
       >
         <span>Posts(368)</span>
         <span className="bg-primary">
