@@ -6,6 +6,7 @@ import PostsFilter from "./components/PostsFilter/index.jsx";
 import PostsCollection from "./components/PostsCollection/index.jsx";
 import Edit from "./edit.png";
 import LoginSignup from "./components/LoginSignup/index.jsx";
+import Header from "./components/Header/index.jsx";
 
 export default function App() {
   const [showLoginModal, setShowLoginModal] = useState(false);
@@ -14,6 +15,8 @@ export default function App() {
   return (
     <main>
       <ShapesRowInMobile />
+
+      <Header setShowLoginModal={setShowLoginModal} />
 
       <Hero setShowLoginModal={setShowLoginModal} />
 

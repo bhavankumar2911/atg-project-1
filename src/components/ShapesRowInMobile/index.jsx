@@ -7,7 +7,7 @@ import "./styles.css";
 function ShapesRowInMobile() {
   return (
     <div
-      className="bg-light d-flex justify-content-end align-items-center"
+      className="bg-light d-flex justify-content-end align-items-center d-lg-none"
       id="shapes-row"
     >
       <img src={Rectangle} alt="rectangle" className="shape" />
