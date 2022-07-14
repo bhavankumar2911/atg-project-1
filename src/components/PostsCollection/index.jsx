@@ -284,6 +284,22 @@ function PostsCollection({ isLoggedIn }) {
                   </button>
                 </li>
               ))}
+              <a
+                href="#"
+                className="d-block"
+                style={{
+                  fontWeight: "400",
+                  fontSize: "12px",
+                  lineHeight: "16px",
+                  textAlign: "right",
+                  color: "#2F6CE5",
+                  float: "right",
+                  textDecoration: "none",
+                  marginTop: "64px",
+                }}
+              >
+                See More...
+              </a>
             </ul>
           </div>
         ) : null}
