@@ -1,0 +1,102 @@
+#login-signup-main {
+  position: fixed;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#login-signup-main form {
+  margin: 20px 0 22px 0;
+}
+
+#login-signup-main > div {
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+  max-width: 100vw;
+}
+
+#login-signup-main h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+#login-signup-main input:nth-child(1) {
+  border-right: 0;
+  border-top-left-radius: 0.25rem;
+}
+
+#login-signup-main input:nth-child(2) {
+  border-top-right-radius: 0.25rem;
+}
+
+#login-signup-main input:nth-child(5) {
+  border: 1px solid #d9d9db;
+}
+
+#login-signup-main input {
+  border: 1px solid #d9d9db;
+  outline: none;
+  background-color: #f7f8fa;
+  border-bottom: 0;
+  padding: 12px;
+  height: 40px;
+}
+
+#password-hide-icon {
+  right: 12px;
+  bottom: 50%;
+  transform: translateY(50%);
+}
+
+#login-signup-main input[type="password"]:nth-child(1) {
+  border-right: 1px solid #d9d9db;
+  border-radius: 0;
+}
+
+.action-section-button {
+  background-color: #2f6ce5 !important;
+  border-radius: 50px !important;
+  padding: 10px !important;
+  width: 150px;
+  text-align: center;
+}
+
+.action-section-button + span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #495057;
+}
+
+#login-signup-main .oauth-button {
+  border: 0.6px solid #d9d9db;
+  font-weight: 400;
+  font-size: 13px;
+  padding: 11px 0;
+  margin-bottom: 12px;
+}
+
+#login-signup-main .oauth-button img {
+  margin-right: 10px;
+}
+
+#meta-text {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: -0.008em;
+  color: #212529;
+  width: 240px;
+  margin: 22px auto 18px auto;
+  display: block;
+  text-decoration: none;
+}

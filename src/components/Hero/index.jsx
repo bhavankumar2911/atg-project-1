@@ -2,7 +2,7 @@ import React from "react";
 import "./styles.css";
 import arrow from "./assets/arrow.png";
 
-function Hero() {
+function Hero({ setShowLoginModal }) {
   return (
     <section id="hero">
       <div
@@ -14,7 +14,11 @@ function Hero() {
           <a>
             <img src={arrow} alt="back arrow" />
           </a>
-          <button className="btn btn-outline-light btn-sm" id="hero-button">
+          <button
+            className="btn btn-outline-light btn-sm"
+            id="hero-button"
+            onClick={(e) => setShowLoginModal(true)}
+          >
             Join Group
           </button>
         </div>
