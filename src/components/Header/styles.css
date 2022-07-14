@@ -28,6 +28,7 @@
   line-height: 21px;
   text-align: right;
   color: #2e2e2e;
+  cursor: pointer;
 }
 
 #header-cta img {

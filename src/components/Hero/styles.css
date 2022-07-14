@@ -38,3 +38,25 @@
   font-size: 12px;
   line-height: 16px;
 }
+
+@media (min-width: 992px) {
+  #hero {
+    height: 440px !important;
+  }
+  #hero-container {
+    padding: 80px 200px 80px 200px;
+  }
+  #hero-container #bottom h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 47px;
+    color: #ffffff;
+  }
+
+  #hero-container #bottom p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #ffffff;
+  }
+}

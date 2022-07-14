@@ -6,11 +6,11 @@ function Hero({ setShowLoginModal }) {
   return (
     <section id="hero">
       <div
-        className="text-white d-flex flex-column justify-content-between h-100"
+        className="text-white d-flex flex-column justify-content-between h-100 justify-content-lg-end"
         id="hero-container"
       >
         {/* top */}
-        <div className="d-flex justify-content-between align-items-center">
+        <div className="d-flex justify-content-between align-items-center d-lg-none">
           <a>
             <img src={arrow} alt="back arrow" />
           </a>
