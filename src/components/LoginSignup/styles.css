@@ -18,7 +18,7 @@
   max-width: 100vw;
 }
 
-#login-signup-main h2 {
+#form-title {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -99,4 +99,23 @@
   margin: 22px auto 18px auto;
   display: block;
   text-decoration: none;
+}
+
+@media (min-width: 992px) {
+  #login-signup-main > div {
+    border-radius: 10px;
+    width: 736px;
+  }
+
+  .action-section-button {
+    width: 100%;
+  }
+
+  #form-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+
+    color: #000000;
+  }
 }
