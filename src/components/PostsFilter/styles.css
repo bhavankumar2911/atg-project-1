@@ -14,3 +14,44 @@
   line-height: 18px;
   letter-spacing: 0.01em;
 }
+
+#posts-filter-lg {
+  /* border-bottom: 1px solid #e0e0e0; */
+}
+
+#category-list {
+  /* border-bottom: 1px solid #e0e0e0; */
+  list-style: none;
+  margin-top: 40px;
+  padding: 0 !important;
+}
+
+#category-list li {
+  margin-right: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #8a8a8a;
+}
+
+#posts-filter-lg-cta {
+  margin-top: 29px;
+}
+
+#category-list li:nth-child(1) {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+  position: relative;
+}
+
+#category-list li:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  bottom: -17px;
+  left: 0;
+}
