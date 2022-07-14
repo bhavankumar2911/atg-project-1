@@ -9,7 +9,7 @@ import LoginSignup from "./components/LoginSignup/index.jsx";
 import Header from "./components/Header/index.jsx";
 
 export default function App() {
-  const [showLoginModal, setShowLoginModal] = useState(true);
+  const [showLoginModal, setShowLoginModal] = useState(false);
   const [isLogin, setIsLogin] = useState(true);
   const [isLoggedIn, setIsLoggedIn] = useState(true);
 
