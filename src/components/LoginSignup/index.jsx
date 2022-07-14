@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles.css";
-import Close from "./assets/Close.png";
+import Close from "./assets/close.png";
 import Eye from "./assets/eye.png";
 import Google from "./assets/google.png";
 import FB from "./assets/fb.png";
